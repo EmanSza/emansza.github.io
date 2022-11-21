@@ -1,0 +1,434 @@
+@font-face {
+    font-family: "Black-Octosqaures";
+    src: url("../fonts/TT.Octosquares/TTOctosquares-Black.ttf");
+}
+@font-face {
+    font-family: "Bold-Octosqaures";
+    src: url("../fonts/TT.Octosquares/TTOctosquaresExp-XLight.otf");
+}
+body {
+    animation: fadeInAnimation ease 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #000123;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+.container {
+    background-color: #FF0F7B;
+    width: 100%;
+    height: 100%;
+}
+
+.main-img {
+    width: 100%;
+    height: 1000px;
+    background-repeat: no-repeat;
+    position: relative;
+    max-height: 750px;
+    min-height: 750px;
+
+}
+.header-text {
+    position: absolute;
+    padding: 1vh;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.header-name {
+    font-family: "Bold-Octosqaures";
+    font-size: 50px;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 0 0 10px #000000;
+    /*  */
+}
+.header-t {
+    font-family: "Black-Octosqaures";
+    margin: 0;
+    font-size: 100px;
+    color: #ffffff;
+    text-shadow: 0 0 10px #000000;
+}
+@media only screen and (max-width: 1000px) {
+
+    .header-t {
+        font-family: "Black-Octosqaures";
+        margin: 0;
+        font-size: 10vw;
+        color: #ffffff;
+        text-shadow: 0 0 10px #000000;
+    }
+    .header-name {
+        font-family: "Bold-Octosqaures";
+        font-size: 5vw;
+        color: #ffffff;
+        margin: 0;
+        text-shadow: 0 0 10px #000000;
+        /*  */
+    }
+    /* Change the button size */
+    .button {
+        font-size: 2vw;
+    }
+    .header-button {
+        /* Make everything scale */
+        transform: scale(0.8);
+
+    }
+    .project-header h1 {
+        text-align: center;
+        font-family: "Bold-Octosqaures";
+        font-size: 10vw
+    }
+    .aboutme-header h1 {
+        text-align: center;
+        font-family: "Bold-Octosqaures";
+        font-size: 10vw
+    }
+
+ 
+ }
+/* Make Project button rectangluar with circular edges/ keeping the arrow within the box*/
+.header-button {
+    position: absolute;
+    background-color: #FF0F7B;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: "Black-Octosqaures";
+    font-size: 20px;
+    color: white;
+    transition: 0.5s;
+    /* Remove underline due to it being a URL */
+    text-decoration: none;
+    margin-top: 25px;
+}
+.button {
+    text-decoration: none;
+    color: white;
+}
+.header-button:hover a {
+    color: #FF0F7B;
+    text-decoration: none;
+    transition: 0.5s;
+}
+/* Add Arrow to button with a white circle behind it */
+.header-button::after {
+    content: "\2192";
+    color: black;
+    font-size: 20px;
+    padding: 0 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+/* Add a hover effect to the button */
+.header-button:hover {
+    background-color: #000123;
+    color: #FF0F7B;
+    transition: 0.5s;
+}
+/* Add a hover effect to the button */
+.header-button:hover::after {
+    background-color: #FF0F7B;
+    color: white;
+    transition: 0.5s;
+}
+/* About me Section */
+
+.aboutme-container {
+    background-color: #000123;
+    width: 100%;
+    height: 100%;
+    padding: 1vh;
+    text-align: center;
+}
+
+.aboutme-header {
+    text-align: center;
+    font-family: "Bold-Octosqaures";
+    font-size: 50px;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 0 0 10px #000000;
+}
+.aboutme-container h2 {
+    font-family: "Bold-Octosqaures";
+    font-size: 35px;
+    color: #FF0F7B;
+    margin: 0;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #000000;
+}
+.aboutme-container h4 {
+    font-family: "Bold-Octosqaures";
+    font-size: 35px;
+    color: #FF0F7B;
+    margin: 0;
+    padding: 1vh;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #000000;
+}
+.aboutme-container p {
+    font-family: "Bold-Octosqaures";
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 0 0 10px #000000;
+}
+/* Social media make each a flat button */
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh;
+}
+.social-media a {
+    text-decoration: none;
+    color: white;
+}
+.social-media a:hover {
+    color: white;
+    transition: 0.5s;
+}
+.social-media a:active {
+    color: #FF0F7B;
+    transition: 0.5s;
+}
+.social-media a:visited {
+    color: #FF0F7B;
+    transition: 0.5s;
+}
+.social-button {
+    background-color: #0f1036;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: "Black-Octosqaures";
+    font-size: 20px;
+    color: white;
+    transition: 0.5s;
+    /* Remove underline due to it being a URL */
+    text-decoration: none;
+    margin: 10px;
+}
+.social-button:hover {
+    background-color: #750437;
+    color: white;
+    transition: 0.5s;
+}
+/* Make the SVG in social-button bigger */
+.social-button img {
+    width: 30px;
+    height: 30px;
+    /* bring the images down a bit to fit on the button using transform */
+    transform: translateY(7px);
+}
+.social-media li {
+    list-style-type: none;
+}
+
+
+/* Allign the main title */
+.project-header {
+    text-align: center;
+    font-family: "Bold-Octosqaures";
+    font-size: 50px;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 0 0 10px #000000;
+}
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 270px;
+    height: 400px;
+    margin: 15px;
+}
+.project-card h2 {
+    font-family: "Bold-Octosqaures";
+    font-size: 35px;
+    color: #FF0F7B;
+    margin: 0;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #000000;
+}
+.project-card p {
+    font-family: "Bold-Octosqaures";
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 0 0 10px #000000;
+}
+.project-card-button {
+    position: absolute;
+    background-color: #0f1036;
+    border: 0;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-family: "Black-Octosqaures";
+    font-size: 20px;
+    color: white;
+    transition: 0.5s;
+    /* Remove underline due to it being a URL */
+    text-decoration: none;
+    margin-top: 25px;
+}
+.project-card-button:hover a {
+    color: #FF0F7B;
+    text-decoration: none;
+    transition: 0.5s;
+}
+/* Add Arrow to button with a white circle behind it */
+.project-card-button::after a {
+    content: "\2192";
+    color: black;
+    font-size: 20px;
+    padding: 0 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+/* Add a hover effect to the button */
+.project-card-button:hover {
+    background-color: #750437;
+    color: white;
+    transition: 0.5s;
+}
+/* Add a hover effect to the button */
+.project-card-button:hover::after {
+    background-color: #FF0F7B;
+    color: white;
+    transition: 0.5s;
+}
+/* If the documentation img is smaller then 500px make the image disappear */
+@media screen and (max-width: 1000px) {
+    .documentation img {
+        opacity: 0;
+    }
+    .documentation {
+        justify-content: center;
+    }
+}
+/* documentation img is the image, documentation h2 and p are the content
+put the image on the left side leaving space between the marines and put the h2 and p on the right side */
+.documentation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh;
+    flex-wrap: nowrap;
+    background-color: aqua;
+}
+.documentation img {
+    width: 450px;
+    height: 600px;
+    margin: 100px;
+
+}
+.documentation h2 {
+    font-family: "Bold-Octosqaures";
+    font-size: 35px;
+    color: #FF0F7B;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #000000;
+}
+.documentation p {
+    font-family: "Bold-Octosqaures";
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 0 0 10px #000000;
+}
+/* documentation-button for each documentation link putting the button under the text */
+.db1 {
+    position: absolute;
+    background-color: #0f1036;
+    border: 0;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-family: "Black-Octosqaures";
+    font-size: 20px;
+    color: white;
+    transition: 0.5s;
+    /* Remove underline due to it being a URL */
+    text-decoration: none;
+    margin-top: 150px;
+    /* Move to the right */
+    margin-left: 750px;
+}
+.db1 a {
+    color: white;
+    text-decoration: none;
+}
+.documentation-button2 {
+    margin-top: 25vh;
+    margin-left: 64.5vh;
+}
+.db1:hover a {
+    color: #FF0F7B;
+    text-decoration: none;
+    transition: 0.5s;
+}
+/* Add Arrow to button with a white circle behind it */
+.db1::after a {
+    content: "\2192";
+    color: black;
+    font-size: 20px;
+    padding: 0 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+/* Add a hover effect to the button */
+.db1:hover {
+    background-color: #750437;
+    color: white;
+    transition: 0.5s;
+}
+/* Add a hover effect to the button */
+.db1:hover::after {
+    background-color: #FF0F7B;
+    color: white;
+    transition: 0.5s;
+}
+/* If the documentation img is smaller then 500px make the image disappear */
+@media screen and (max-width: 1000px) {
+    .documentation img {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        margin: 0;
+    }
+    .documentation{
+        justify-content: center;
+        display: block;
+    }
+    /* Fix Buttons by having them always alligned with documentation p */
+    .documentation-button2 {
+        margin-top: 25vh;
+        margin-left: 0;
+    }
+    .db1 {
+        margin-top: 1vh;
+        margin-left: 10vh;
+    }
+
+}
